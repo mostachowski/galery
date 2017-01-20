@@ -1,10 +1,22 @@
+<base href="/">
+
+<h1>Angular Router</h1>
+  <nav>
+    <a routerLink="/mainPage" routerLinkActive="active">main Page</a>
+    <a routerLink="/login" routerLinkActive="active">login</a>
+  </nav>
+ 
 <div>
   <top-menu></top-menu>
+ 
 
 </div>
 <table>
     <tr>
-        <dr><left-menu></left-menu></dr>
-    <!--<dr><main-page/></dr>-->
+        <td><left-menu></left-menu></td>
+        <td>
+            <!--<main-page></main-page>-->
+             <router-outlet></router-outlet>
+            </td>
      </tr>
 </table>
